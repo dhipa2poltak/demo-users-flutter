@@ -1,16 +1,14 @@
 # demo_users
 
-A new Flutter project.
+To run project:
+1. Open Terminal in root project and type "flutter pub get" (enter) and then "flutter pub run build_runner build --delete-conflicting-outputs" (enter)
+2. Open project in Android Studio and then create two Flutter run configuration with details specified below:
+   - Name: dev
+   - Dart entrypoint: (pointing to) lib/main_dev.dart
+   - Build flavor: dev
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+   - Name: prod
+   - Dart entrypoint: (pointing to) lib/main_prod.dart
+   - Build flavor: prod
+   
+3. Run the project with "dev" run configuration or "prod" run configuration.
